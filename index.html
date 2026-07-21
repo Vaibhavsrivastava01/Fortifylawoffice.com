@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortify Law Office - Premium Legal Services in India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="disclaimer-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- BCI Disclaimer Popup -->
+    <div id="disclaimerPopup" class="disclaimer-popup-overlay">
+        <div class="disclaimer-popup-container">
+            <div class="disclaimer-popup-header">
+                <i class="fas fa-gavel"></i>
+                <h2>Legal Disclaimer</h2>
+            </div>
+            
+            <div class="disclaimer-popup-content">
+                <div class="disclaimer-badge">Bar Council of India Compliance</div>
+                
+                <h3>Disclaimer</h3>
+                
+                <div class="disclaimer-text">
+                    <p><strong>The Bar Council of India does not permit advertisement or solicitation by advocates in any form or manner.</strong></p>
+                    
+                    <p>By accessing this website, you acknowledge and confirm that you are seeking information relating to Fortify Law Office of your own accord and that there has been no form of solicitation, advertisement or inducement by Fortify Law Office or any of its members.</p>
+                    
+                    <p>The content of this website is provided solely for informational purposes and should not be construed as solicitation, advertisement or legal advice. No material or information contained on this website creates an advocate-client relationship. Fortify Law Office shall not be responsible for any action taken or not taken based on the information available on this website. Visitors should seek appropriate professional legal advice for their specific circumstances.</p>
+                    
+                    <p>All content and materials on this website, unless otherwise stated, are the intellectual property of Fortify Law Office.</p>
+                </div>
+            </div>
+            
+            <div class="disclaimer-popup-footer">
+                <label class="disclaimer-checkbox">
+                    <input type="checkbox" id="disclaimerCheckbox">
+                    <span class="checkbox-label">I have read and accept the above</span>
+                </label>
+                
+                <button id="proceedButton" class="proceed-button" disabled>
+                    Proceed to Website
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="main-content-wrapper">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <div class="logo">
+                        <i class="fas fa-scales"></i>
+                        <span>Fortify Law Office</span>
+                    </div>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#practices" class="nav-link">Practice Areas</a></li>
+                    <li><a href="#team" class="nav-link">Our Team</a></li>
+                    <li><a href="#insights" class="nav-link">Insights</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Premium Legal Excellence</h1>
+                <p>Trusted Legal Counsel for Your Success</p>
+                <a href="#contact" class="cta-button">Schedule a Consultation</a>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Fortify Law Office</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Fortify Law Office is a distinguished legal practice committed to providing exceptional legal services to individuals and corporations across India. With years of experience and expertise, we have established ourselves as trusted advisors in intellectual property, litigation, corporate law, and regulatory matters.</p>
+                        <p>Our firm is built on the foundation of integrity, professionalism, and a deep commitment to our clients' success. We combine traditional legal expertise with modern business acumen to deliver innovative solutions for our clients' most complex legal challenges.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h3>500+</h3>
+                                <p>Cases Successfully Handled</p>
+                            </div>
+                            <div class="stat">
+                                <h3>25+</h3>
+                                <p>Years of Experience</p>
+                            </div>
+                            <div class="stat">
+                                <h3>98%</h3>
+                                <p>Client Satisfaction Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Areas Section -->
+        <section id="practices" class="practices">
+            <div class="container">
+                <h2>Our Practice Areas</h2>
+                <div class="practices-grid">
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Intellectual Property Rights</h3>
+                        <p>Comprehensive IP services including trademark registration, copyright protection, patent prosecution, oppositions, enforcement, and strategic advisory for protecting your valuable intellectual assets.</p>
+                    </div>
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Litigation & Dispute Resolution</h3>
+                        <p>Expert representation in civil, criminal, commercial, and constitutional litigation with a proven track record in high-stakes disputes and appellate proceedings.</p>
+                    </div>
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Commercial & Corporate Law</h3>
+                        <p>Business advisory, commercial transactions, mergers & acquisitions, company formation, corporate governance, and regulatory compliance for growing enterprises.</p>
+                    </div>
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Contracts & Agreements</h3>
+                        <p>Expert drafting, review, and negotiation of commercial contracts, service agreements, partnership agreements, and all business-critical legal documents.</p>
+                    </div>
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Real Estate & RERA</h3>
+                        <p>Specialized expertise in property disputes, regulatory compliance, RERA-related matters, conveyancing, and all aspects of real estate law and transactions.</p>
+                    </div>
+                    <div class="practice-card">
+                        <div class="practice-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Taxation & Regulatory Matters</h3>
+                        <p>Professional tax dispute resolution, regulatory representation, tax planning, compliance guidance, and representation before tax authorities and regulatory bodies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Areas Details Section -->
+        <section class="practice-details">
+            <div class="container">
+                <h2>Specialized Expertise</h2>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <div class="detail-number">01</div>
+                        <h4>IP Prosecution & Protection</h4>
+                        <p>Trademark registration, copyright registration, patent filing, IP enforcement strategies, and opposition proceedings before IP authorities.</p>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-number">02</div>
+                        <h4>Civil & Criminal Litigation</h4>
+                        <p>Complex civil matters, criminal defense, commercial disputes, constitutional litigation, and representation in appellate courts.</p>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-number">03</div>
+                        <h4>M&A & Corporate Advisory</h4>
+                        <p>Mergers and acquisitions, business reorganization, corporate restructuring, and strategic business advisory services.</p>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-number">04</div>
+                        <h4>Contract Management</h4>
+                        <p>Commercial contract drafting, review and negotiation for service agreements, purchase agreements, and employment contracts.</p>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-number">05</div>
+                        <h4>Property & RERA Compliance</h4>
+                        <p>Property acquisition and sales, lease agreements, RERA compliance, property disputes, and regulatory matter representation.</p>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-number">06</div>
+                        <h4>Tax & Regulatory</h4>
+                        <p>Tax dispute resolution, regulatory compliance, representation before tax authorities, and advisory on regulatory matters.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team">
+            <div class="container">
+                <h2>Our Esteemed Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Rajesh Kumar Sharma</h3>
+                        <p class="member-title">Senior Partner & Founder</p>
+                        <p class="member-title-sub">Corporate Law & M&A</p>
+                        <p class="member-bio">With 25+ years of experience in corporate and commercial law, Rajesh is renowned for his strategic legal counsel in complex M&A transactions and business restructuring.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Priya Verma</h3>
+                        <p class="member-title">Senior Associate</p>
+                        <p class="member-title-sub">Litigation & Dispute Resolution</p>
+                        <p class="member-bio">Specializing in commercial and constitutional litigation with a successful track record in appellate courts and high-stakes dispute resolution.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Dr. Neha Gupta</h3>
+                        <p class="member-title">Senior Associate</p>
+                        <p class="member-title-sub">Intellectual Property Rights</p>
+                        <p class="member-bio">Expert in trademark prosecution, copyright registration, patent filing, IP enforcement, and strategic IP advisory for innovative enterprises.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Amit Patel</h3>
+                        <p class="member-title">Associate</p>
+                        <p class="member-title-sub">Real Estate & RERA</p>
+                        <p class="member-bio">Specialized expertise in property disputes, RERA compliance, conveyancing, and regulatory matters in the real estate sector.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Vijay Saxena</h3>
+                        <p class="member-title">Associate</p>
+                        <p class="member-title-sub">Taxation & Regulatory</p>
+                        <p class="member-bio">Experienced in tax dispute resolution, regulatory compliance, tax planning, and representation before tax authorities and regulatory bodies.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Shreya Menon</h3>
+                        <p class="member-title">Associate</p>
+                        <p class="member-title-sub">Contracts & Commercial Law</p>
+                        <p class="member-bio">Expert in commercial contract drafting, review and negotiation with focus on service agreements, purchase orders, and business-critical documents.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights Section -->
+        <section id="insights" class="insights">
+            <div class="container">
+                <h2>Legal Insights & Updates</h2>
+                <div class="insights-grid">
+                    <article class="insight-card">
+                        <div class="insight-date">July 21, 2024</div>
+                        <div class="insight-category">Intellectual Property</div>
+                        <h3>Recent Amendments to Trademark Registration Process in India</h3>
+                        <p>Stay informed about the latest changes in trademark registration procedures at the Indian Intellectual Property Office. We break down key procedural updates and their implications for businesses.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+                    <article class="insight-card">
+                        <div class="insight-date">July 18, 2024</div>
+                        <div class="insight-category">RERA & Real Estate</div>
+                        <h3>RERA Compliance: Essential Guidelines for Real Estate Developers</h3>
+                        <p>A comprehensive guide to understanding and complying with RERA regulations. Learn about registration requirements, project approvals, and buyer protection mechanisms.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+                    <article class="insight-card">
+                        <div class="insight-date">July 15, 2024</div>
+                        <div class="insight-category">Tax & Regulatory</div>
+                        <h3>Tax Dispute Resolution: Navigating GST and Income Tax Appeals</h3>
+                        <p>Explore effective strategies for resolving tax disputes. Learn about the appellate process, documentation requirements, and best practices for favorable outcomes.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+                    <article class="insight-card">
+                        <div class="insight-date">July 12, 2024</div>
+                        <div class="insight-category">Commercial Law</div>
+                        <h3>Contract Negotiation Best Practices for Business Leaders</h3>
+                        <p>Essential insights into effective contract negotiation strategies, risk mitigation, and protecting your business interests in commercial agreements.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+                    <article class="insight-card">
+                        <div class="insight-date">July 10, 2024</div>
+                        <div class="insight-category">Litigation</div>
+                        <h3>Commercial Dispute Resolution: ADR vs Litigation</h3>
+                        <p>Understand when to opt for alternative dispute resolution methods versus traditional litigation. Learn about arbitration, mediation, and their advantages.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+                    <article class="insight-card">
+                        <div class="insight-date">July 8, 2024</div>
+                        <div class="insight-category">Corporate Law</div>
+                        <h3>M&A Due Diligence: Key Considerations for Business Acquisitions</h3>
+                        <p>Essential checklist for conducting thorough due diligence in mergers and acquisitions. Learn about legal, financial, and operational considerations.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Fortify Law Office<br>123 Legal Avenue<br>New Delhi, India - 110001</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 (11) 4567-8901<br>+91 (11) 4567-8902</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@fortifylawoffice.com<br>info@fortifylawoffice.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <select required>
+                            <option value="">Select Practice Area</option>
+                            <option value="ip">Intellectual Property Rights</option>
+                            <option value="litigation">Litigation & Dispute Resolution</option>
+                            <option value="corporate">Commercial & Corporate Law</option>
+                            <option value="contracts">Contracts & Agreements</option>
+                            <option value="realty">Real Estate & RERA</option>
+                            <option value="tax">Taxation & Regulatory</option>
+                        </select>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer Section -->
+        <section class="disclaimer">
+            <div class="container">
+                <h3>Professional Disclaimer</h3>
+                <p>The information contained on this website is for general informational purposes only and does not constitute legal advice. The contents of this website are not a substitute for professional legal advice from a qualified attorney. While we endeavor to keep the information on this website up-to-date, we do not represent that the information is accurate, complete, or current.</p>
+                <p>Each case is unique and the results in any case depend upon the specific circumstances and applicable laws. Past performance is not indicative of future results. Fortify Law Office does not guarantee specific outcomes and is not liable for any indirect, incidental, special, or consequential damages.</p>
+                <p>The use of this website and the information herein does not establish an attorney-client relationship. No attorney-client privilege is created unless and until a formal engagement letter is executed and signed by both the client and the firm.</p>
+                <p>By accessing this website, you agree to hold harmless and indemnify Fortify Law Office and its partners, associates, and staff from any and all claims, damages, or losses arising out of your use of this website or reliance on its contents.</p>
+                <p>All information provided on this website is subject to change without notice. Fortify Law Office reserves the right to update, modify, or discontinue any content on this website at any time.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <i class="fas fa-scales"></i>
+                            <span>Fortify Law Office</span>
+                        </div>
+                        <p>A premier legal practice committed to excellence, integrity, and delivering exceptional legal services to individuals and corporations across India.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Practice Areas</h4>
+                        <ul>
+                            <li><a href="#practices">Intellectual Property Rights</a></li>
+                            <li><a href="#practices">Litigation & Disputes</a></li>
+                            <li><a href="#practices">Corporate Law</a></li>
+                            <li><a href="#practices">Real Estate & RERA</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#insights">Insights</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Fortify Law Office. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Disclaimer</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="disclaimer-popup.js"></script>
+</body>
+</html>

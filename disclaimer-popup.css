@@ -1,0 +1,334 @@
+/* ===========================
+   BCI Disclaimer Popup Styles
+   =========================== */
+
+.disclaimer-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    animation: fadeIn 0.4s ease-out;
+}
+
+.disclaimer-popup-overlay.hidden {
+    display: none;
+}
+
+.main-content-wrapper.blurred {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.disclaimer-popup-container {
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(212, 175, 55, 0.2);
+    width: 90%;
+    max-width: 600px;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    overflow: hidden;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+.disclaimer-popup-header {
+    background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 3px solid #d4af37;
+}
+
+.disclaimer-popup-header i {
+    font-size: 32px;
+    color: #d4af37;
+}
+
+.disclaimer-popup-header h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Content */
+.disclaimer-popup-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 30px;
+    scrollbar-width: thin;
+    scrollbar-color: #d4af37 #f5f5f5;
+}
+
+.disclaimer-popup-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.disclaimer-popup-content::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.disclaimer-popup-content::-webkit-scrollbar-thumb {
+    background: #d4af37;
+    border-radius: 10px;
+}
+
+.disclaimer-popup-content::-webkit-scrollbar-thumb:hover {
+    background: #b8941e;
+}
+
+.disclaimer-badge {
+    display: inline-block;
+    background-color: rgba(26, 77, 46, 0.1);
+    border: 2px solid #d4af37;
+    color: #1a4d2e;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.disclaimer-popup-content h3 {
+    color: #1a4d2e;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.disclaimer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.disclaimer-text p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+    text-align: justify;
+}
+
+.disclaimer-text p strong {
+    color: #d4af37;
+    font-weight: 700;
+}
+
+/* Footer */
+.disclaimer-popup-footer {
+    padding: 25px 30px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Checkbox */
+.disclaimer-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.disclaimer-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #d4af37;
+}
+
+.disclaimer-checkbox input[type="checkbox"]:focus {
+    outline: 2px solid #d4af37;
+    outline-offset: 2px;
+}
+
+.checkbox-label {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Button */
+.proceed-button {
+    background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%);
+    color: #ffffff;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.proceed-button:not(:disabled):hover {
+    background: linear-gradient(135deg, #2d6a4f 0%, #1a4d2e 100%);
+    box-shadow: 0 10px 25px rgba(26, 77, 46, 0.3);
+    transform: translateY(-2px);
+}
+
+.proceed-button:not(:disabled):active {
+    transform: translateY(0);
+}
+
+.proceed-button:disabled {
+    background: linear-gradient(135deg, #cccccc 0%, #999999 100%);
+    color: #666666;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.proceed-button i {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.proceed-button:not(:disabled):hover i {
+    transform: translateX(3px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .disclaimer-popup-container {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .disclaimer-popup-header {
+        padding: 20px;
+    }
+
+    .disclaimer-popup-header h2 {
+        font-size: 20px;
+    }
+
+    .disclaimer-popup-content {
+        padding: 20px;
+    }
+
+    .disclaimer-popup-content h3 {
+        font-size: 18px;
+    }
+
+    .disclaimer-text p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .disclaimer-popup-footer {
+        padding: 20px;
+    }
+
+    .proceed-button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .disclaimer-popup-container {
+        width: 98%;
+        max-height: 95vh;
+    }
+
+    .disclaimer-popup-header {
+        padding: 15px;
+    }
+
+    .disclaimer-popup-header h2 {
+        font-size: 18px;
+    }
+
+    .disclaimer-popup-content {
+        padding: 15px;
+    }
+
+    .checkbox-label {
+        font-size: 13px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .disclaimer-popup-overlay,
+    .disclaimer-popup-container,
+    .proceed-button,
+    .proceed-button i {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .disclaimer-popup-container {
+        background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+    }
+
+    .disclaimer-popup-content {
+        background-color: #2a2a2a;
+        scrollbar-color: #d4af37 #2a2a2a;
+    }
+
+    .disclaimer-popup-content::-webkit-scrollbar-track {
+        background: #2a2a2a;
+    }
+
+    .disclaimer-text p {
+        color: #e0e0e0;
+    }
+
+    .disclaimer-popup-footer {
+        background-color: #1f1f1f;
+        border-top-color: #404040;
+    }
+
+    .checkbox-label {
+        color: #e0e0e0;
+    }
+}
